@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PTCollectionViewCell" id="gTV-IL-0wX" customClass="PTCollectionViewCell" customModule="ios_viewlayout" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="294" height="231"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="294" height="231"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pf3-ea-YZ7">
+                        <rect key="frame" x="0.0" y="0.0" width="294" height="231"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Twf-fr-yjB">
+                                <rect key="frame" x="126" y="105" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Twf-fr-yjB" firstAttribute="centerX" secondItem="Pf3-ea-YZ7" secondAttribute="centerX" id="cBX-bT-91J"/>
+                            <constraint firstItem="Twf-fr-yjB" firstAttribute="centerY" secondItem="Pf3-ea-YZ7" secondAttribute="centerY" id="qob-ht-r4H"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Pf3-ea-YZ7" secondAttribute="bottom" id="AJB-9n-k9J"/>
+                <constraint firstAttribute="trailing" secondItem="Pf3-ea-YZ7" secondAttribute="trailing" id="PU6-2t-CCJ"/>
+                <constraint firstItem="Pf3-ea-YZ7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Zgl-PJ-Pdo"/>
+                <constraint firstItem="Pf3-ea-YZ7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hFb-vt-Iee"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="294" height="231"/>
+            <connections>
+                <outlet property="numberLabel" destination="Twf-fr-yjB" id="JJI-qt-CQr"/>
+            </connections>
+            <point key="canvasLocation" x="211.59420289855075" y="95.424107142857139"/>
+        </collectionViewCell>
+    </objects>
+</document>
